@@ -1,48 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tip Calculator - Anmol Sansi</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+    <title>Tip Calculator - Anmol Sansi</title> <!-- Page title -->
+    <link rel="stylesheet" href="style.css"> <!-- Link to an external stylesheet -->
+    <script src="script.js"></script> <!-- Include an external JavaScript file -->
 </head>
-
 <body>
     <div class="header">
+        <!-- Header section containing title and calculator form -->
         <div>
-            <h1>ITMD541: Lab3 - Anmol Sansi</h1>
+            <h1>ITMD541: Lab3 - Anmol Sansi</h1> <!-- Page heading -->
         </div>
 
         <div class="calc">
-            <form id="mainForm">
-                <label id="heading">&emsp;Tip Calculator</label>
-                <label id="heading2">for Mobile</label>
+            <!-- Calculator form -->
+            <form>
+                <label id="heading">&emsp;Tip Calculator</label> <!-- Calculator heading -->
+                <label id="heading2">for Mobile</label> <!-- Subheading for mobile-->    
 
                 <label id="top">
-                    &emsp;&emsp;&emsp;&ensp;Bill Total
+                    &emsp;&emsp;&emsp;&ensp;Bill Total <!-- Label for the Bill Total input -->
                     <input type="number" id="total" min="0" oninput="calc1()">
                 </label>
-                <div id="errorMsg"></div>
+                <div id="errorMsg"></div> <!-- Error message container -->
                 <label>
-                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Tip
+                    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Tip <!-- Label for the Tip range input -->
                     <input type="range" id="tip" value="0" min="0" max="100" oninput="calc2()">
                 </label>
                 <label>
-                    &emsp;&ensp;Tip Percentage
+                    &emsp;&ensp;Tip Percentage <!-- Label for displaying the tip percentage -->
                     <input type="number" id="tipPercent" disabled>
                 </label>
                 <label>
-                    &emsp;&emsp;&ensp;Tip Amount
+                    &emsp;&emsp;&ensp;Tip Amount <!-- Label for displaying the tip amount -->
                     <input type="number" id="tipAmount" disabled>
                 </label>
                 <label id="last">
-                    Total Bill with Tip
+                    Total Bill with Tip <!-- Label for displaying the total bill with tip -->
                     <input type="number" id="totalWithTip" disabled>
                 </label>
             </form>
-            <!--Content before waves-->
+            <!-- Content before waves -->
             <div class="inner-calc flex">
                 <path fill="#FFFFFF" stroke="#000000" stroke-width="10" stroke-miterlimit="10" d="M57,283" />
                 <g>
@@ -51,7 +51,7 @@
                 </g>
             </div>
 
-            <!--Waves Container-->
+            <!-- Waves Container -->
             <div>
                 <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
                     viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
@@ -69,8 +69,6 @@
             </div>
         </div>
     </div>
-    <!--Waves end-->
-
+    <!-- End of Waves Container -->
 </body>
-
 </html>
